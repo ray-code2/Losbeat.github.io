@@ -1,0 +1,23 @@
+.Landing-page{
+    display: flex;
+    align-items:stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.Landing-page .image-wrapper{
+    flex-grow:1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.Landing-page .lady-image{
+    flex-grow: 1;
+    max-height: 100vh;
+    max-width: 40vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-image: url(Images/landing-page-girl.png);
+}
+.gay
