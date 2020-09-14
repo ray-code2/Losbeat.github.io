@@ -17,7 +17,8 @@ body{
     list-style: none;
     align-items: center;
     padding : 12px 10px;
-    height: 140px;
+    height: 80px;
+
 }
 .brand-logo{
     display: flex;
@@ -60,7 +61,7 @@ body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 0px;
 }
 .full-height-grow{
     display: flex;
@@ -74,16 +75,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-
-    
-
 }
 .Landing-page{
     align-items: center;
     justify-content: space-between;
-    height: 700px;
+    height: 670px;
     display: flex;
-    margin-left: 100px;
     
 }
 .btn{
@@ -103,7 +100,11 @@ body{
     font-size:  96px;
 }
 .subtitle{
+    align-items: center;
     font-weight: Bold;
     font-size: 48px;
     color: #000000;
+}
+.filler{
+    height: 20px;
 }
