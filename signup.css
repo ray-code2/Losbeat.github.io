@@ -1,5 +1,6 @@
 body{
-    margin:800px;
+    background-size: cover;
+    overflow: hidden;
     font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254d );
 }
