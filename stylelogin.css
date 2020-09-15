@@ -1,6 +1,8 @@
 body{
+
     margin:1150px;
     overflow: hidden;
+
     font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254D);
 }
@@ -49,9 +51,11 @@ p{
     padding:5px;
     font-size:18px;
     border-radius:15px;
-    margin-top:20px;
+    margin-top:21px;
 }
 .Navigation{
+    margin-left: 50px;
+    width: 90%; 
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -60,7 +64,9 @@ p{
     left:10%;
     transform:translate(-10%,-10%);
     position :absolute;
-
+}
+.discover{
+    padding-right: 30px;
 }
 .brand-logo{
     display: flex;
@@ -87,7 +93,7 @@ p{
     align-items: center;
     text-decoration: none;
     line-height: 5px;
-    padding : 2px;
+    padding-left : 20px;
     justify-content: space-between;
 }
 .Nav-links ul{
