@@ -25,10 +25,12 @@ input[type=checkbox] {
     margin-right: 15px;
     padding-top: 100px;
 }
+
 .createacc{
     width: 300px;
     margin-left:0px; 
 }
+
 .login{
     width: 280px;
     position: absolute;
@@ -76,8 +78,10 @@ h1{
     flex-direction: column;
 }
 .Navigation{
+
     margin-left: 25px;
     width:95%;
+
     display: flex;
     justify-content: space-between;
     list-style: none;
