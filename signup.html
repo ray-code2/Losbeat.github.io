@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link href="signup.css" rel="Stylesheet">
+</head>
+<script defer src="signup.js"></script>
+<body>
+  
+    <header class="Navigation">
+        <a href="Losbeats.html" class="brand-logo">
+        <img src="images/logo.png">
+        <div class="brand-logo-name">LOSBEATS</div>
+        </a>
+        <nav class="Nav-links">
+            <ul>
+                <li>
+                    <a href="Discover.html">Discover</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="error"></div>
+    
+        <form class="login" id="form" action="/" method="GET">
+            <h1 class="createacc">
+                Create Account
+            </h1>
+            <div class="textbox">
+            <p>Username</p>
+            <input id="Username" type="text" name="Username" placeholder="Enter Username">
+        </div>
+        <div class="textbox">
+            <p>Email</p>
+            <input id="Email" type="email" name="Email" placeholder="Enter Email";>
+        </div>
+        <div class="textbox">
+            <p>Password</p>
+            <input id="Password" type="password" name="Password" placeholder="Enter Password";>
+        </div>
+        <div class="textbox">
+            <p>Confirm Password</p>
+            <input id="Confirm Password" type="password" name="Confpass" placeholder="Confirm Password";>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox"><span>I've Agreed with <a href="Losbeat-terms-conditions.pdf">The Terms & Conditions</a></span>
+        </div>
+        
+        <a href="Recommend.html">
+        <input class="btn" type="button" name="Submit" value="Submit">
+        </a>
+</form>
+</body>
+</html>
