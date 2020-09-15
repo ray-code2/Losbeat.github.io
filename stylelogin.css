@@ -1,5 +1,6 @@
 body{
-    margin:800px;
+    margin:1150px;
+    overflow: hidden;
     background:linear-gradient(to bottom,#c27474,#39254D);
 }
 h1{
