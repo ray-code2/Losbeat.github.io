@@ -1,17 +1,12 @@
 body{
-<<<<<<< HEAD
     margin: 1150px;
     overflow: hidden;
-=======
-    margin:800px;
->>>>>>> 6211dd05e21b5f4df751d1adff87617f1cd23aa9
     font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254d );
 }
 h1{
     margin-left: 75px;
 }
-<<<<<<< HEAD
 
 .checkbox{
     margin-top: 10px;
@@ -30,12 +25,12 @@ input[type=checkbox] {
     margin-right: 15px;
     padding-top: 100px;
 }
+
 .createacc{
     width: 300px;
     margin-left:0px; 
 }
-=======
->>>>>>> 6211dd05e21b5f4df751d1adff87617f1cd23aa9
+
 .login{
     width: 280px;
     position: absolute;
@@ -73,7 +68,6 @@ input[type=checkbox] {
     border-radius: 15px;
     color:white;
     padding:5px;
-<<<<<<< HEAD
     cursor: pointer;
     font-size:18px;
     margin-top: 20px;
@@ -84,8 +78,10 @@ h1{
     flex-direction: column;
 }
 .Navigation{
+
     margin-left: 25px;
     width:95%;
+
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -135,8 +131,3 @@ h1{
 .Nav-links a:hover{
     color: lightgray;
 }
-=======
-    font-size:18px;
-    margin-top: 20px;
-}
->>>>>>> 6211dd05e21b5f4df751d1adff87617f1cd23aa9
