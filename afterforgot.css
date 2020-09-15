@@ -1,6 +1,7 @@
 body{
-    margin:1150px;
-    overflow: hidden;
     font-family: sans-serif;
-    background:linear-gradient(to bottom,#c27474,#39254D);
+    background-color: #2F303A;
+}
+p {
+    color: white;
 }
