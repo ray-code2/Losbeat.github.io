@@ -3,6 +3,7 @@
     align-items:stretch;
     justify-content: space-between;
     flex-grow: 1;
+    
 }
 .Landing-page .image-wrapper{
     flex-grow:1;

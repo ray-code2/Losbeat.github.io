@@ -1,10 +1,14 @@
 body{
     margin:1150px;
     overflow: hidden;
+    font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254D);
 }
 h1{
     margin-left: 75px;
+}
+p{
+    margin-top: 12px;;
 }
 .login{
     width: 280px;

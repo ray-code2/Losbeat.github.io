@@ -6,34 +6,52 @@
     <title>Signup Page</title>
     <link href="signup.css" rel="Stylesheet">
 </head>
+<script defer src="signup.js"></script>
 <body>
-    <div class="login" >
-        <h1 style="margin-bottom: 20px;">
-            Create Account
-        </h1>
-        <div class="textbox">
-            <p style="margin-top:12px;">Username</p>
-            <input type="text" name="" placeholder="Enter Username">
+  
+    <header class="Navigation">
+        <a href="Losbeats.html" class="brand-logo">
+        <img src="images/logo.png">
+        <div class="brand-logo-name">LOSBEATS</div>
+        </a>
+        <nav class="Nav-links">
+            <ul>
+                <li>
+                    <a href="Discover.html">Discover</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="error"></div>
+    
+        <form class="login" id="form" action="/" method="GET">
+            <h1>
+                Create Account
+            </h1>
+            <div class="textbox">
+            <p>Username</p>
+            <input id="Username" type="text" name="Username" placeholder="Enter Username">
         </div>
         <div class="textbox">
-            <p style="margin-top:12px;">Email</p>
-            <input type="email" name="email" placeholder="Enter Email";>
+            <p>Email</p>
+            <input id="Email" type="email" name="Email" placeholder="Enter Email";>
         </div>
         <div class="textbox">
-            <p style="margin-top:12px;">Password</p>
-            <input type="password" name="password" placeholder="Enter Password";>
+            <p>Password</p>
+            <input id="Password" type="password" name="Password" placeholder="Enter Password";>
         </div>
         <div class="textbox">
-            <p style="margin-top:12px;" >Confirm Password</p>
-            <input type="password" name="confpass" placeholder="Confirm Password";>
+            <p>Confirm Password</p>
+            <input id="Confirm Password" type="password" name="Confpass" placeholder="Confirm Password";>
         </div>
         <div class="checkbox">
-        <input type="checkbox" ><span>I've Agreed with <a href="/">The Terms & Conditions</a></span>
+        <input type="checkbox"><span>I've Agreed with <a href="Losbeat-terms-conditions.pdf">The Terms & Conditions</a></span>
         </div>
         
         <a href="Recommend.html">
-        <input class="btn" type="button" name="" value="Submit">
+        <input class="btn" type="button" name="Submit" value="Submit">
         </a>
-    </div>
+</form>
 </body>
 </html>
