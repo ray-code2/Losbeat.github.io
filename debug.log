@@ -1,5 +1,0 @@
-[0914/112030.741:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
-[0914/160731.751:ERROR:file_io.cc(90)] ReadExactly: expected 152, observed 40
-[0914/161201.598:ERROR:settings.cc(325)] Settings version is not 1
-[0914/162611.726:ERROR:file_io.cc(90)] ReadExactly: expected 152, observed 40
-[0914/162633.490:ERROR:settings.cc(325)] Settings version is not 1
