@@ -8,27 +8,99 @@ h1{
     margin-left: 75px;
 }
 
-.checkbox{
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.checkbox a{
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
     cursor: pointer;
-    color: #ffffff;
-}
-input[type=checkbox] {
-    transform: scale(2);
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
     align-items: center;
-    margin-bottom: 13px;
-    margin-top: 20px;
-    margin-right: 15px;
-    padding-top: 100px;
-}
+    justify-items: center;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    transform: scale(1);
+    margin-top: 27px;
+    margin-left: 15px;
+    height: 25px;
+    width: 25px;
+    background-color: none;
+    border: 1px solid #fff;
+  }
+  .checkmark:hover{
+    border: 1px solid #3C99DC;
+  }
+  .condition{
+      margin-top: 25px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      font-size: 18px;
 
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  
+  
+  .terms{
+      color: #fff;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  
 .createacc{
     width: 300px;
-    margin-left:0px; 
+    margin-left:15px; 
+ 
+}
+.createacc:hover{
+    color: #3C99DC;
+    font-weight: 700;
+
 }
 
 .login{
@@ -45,6 +117,9 @@ input[type=checkbox] {
     font-size: 20px;
     border-bottom: 1px solid;
 }
+.textbox:hover{
+    border-bottom: 1px solid #3C99DC;
+}
 
 .textbox i{
     width:26px;
@@ -52,6 +127,7 @@ input[type=checkbox] {
     text-align:center;
 }
 .textbox input{
+    width: 100%;
     border:none;
     outline:none;
     background:none;
@@ -71,6 +147,11 @@ input[type=checkbox] {
     cursor: pointer;
     font-size:18px;
     margin-top: 20px;
+}
+.btn:hover{
+    border: 1px solid #3C99DC;
+    color: #3C99DC;
+    font-weight: 500;
 }
 h1{
     margin-bottom: 20px;
@@ -110,7 +191,7 @@ h1{
     margin-left: 20px;
 }
 .Nav-links a{
-    color: black;
+    color: #fff;
     display: flex;
     font-weight: 600;
     list-style: none;
@@ -123,11 +204,11 @@ h1{
 .Nav-links ul{
     list-style: none;
     display: flex;
-    color : black;
     font-weight: 500;
     font-size: 36px;
    
 }
 .Nav-links a:hover{
-    color: lightgray;
+    color: #2F303A;
+  
 }
