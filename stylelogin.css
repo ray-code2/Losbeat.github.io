@@ -2,7 +2,6 @@ body{
 
     margin:1150px;
     overflow: hidden;
-
     font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254D);
 }
@@ -20,6 +19,9 @@ p{
     transform:translate(-50%,-50%);
     color:white;
 }
+input:focus::placeholder {
+    color: transparent;
+  }
 .textbox{
     width:100%;
     overflow:hidden;
@@ -28,12 +30,16 @@ p{
     margin: 8px 0;
     border-bottom: 1px solid;
 }
+.textbox:hover{
+    border-bottom: 1px solid #3C99DC;
+}
 .textbox i{
     width:26px;
     float:left;
     text-align:center;
 }
 .textbox input{
+    width: 100%;
     border:none;
     outline:none;
     background:none;
@@ -53,6 +59,11 @@ p{
     cursor: pointer;
     border-radius:15px;
     margin-top:21px;
+}
+.btn:hover{
+    border: 1px solid #3C99DC;
+    color: #3C99DC;
+    font-weight: 500;
 }
 .Navigation{
     margin-left: 50px;
@@ -87,7 +98,7 @@ p{
     margin-left: 20px;
 }
 .Nav-links a{
-    color: black;
+    color: #fff;
     display: flex;
     font-weight: 600;
     list-style: none;
@@ -100,11 +111,11 @@ p{
 .Nav-links ul{
     list-style: none;
     display: flex;
-    color : black;
+    
     font-weight: 500;
     font-size: 36px;
    
 }
 .Nav-links a:hover{
-    color: lightgray;
+    color: #2F303A;
 }
