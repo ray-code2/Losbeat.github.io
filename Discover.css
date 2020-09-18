@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    animation: show 2s ;
   }
 
   .discover-main-section .covers-image {
@@ -22,7 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: .5rem;
+    margin: 1.5rem;
     padding: .75rem;
     width: 100px;
     height: 100px;
@@ -44,5 +45,33 @@
       margin-top: 2rem;
       height: 30vh;
       width: auto;
+    }
+  }
+  .covers-image{
+    animation: rotate 5.5s infinite;
+  }
+  @keyframes show{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes rotate{
+    0%{
+     transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(90deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    75%{
+      transform: rotate(270deg);
+    }
+    100%{
+      transform: rotate(360deg);
     }
   }
