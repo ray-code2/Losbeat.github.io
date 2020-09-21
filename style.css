@@ -18,6 +18,7 @@ body{
     align-items: center;
     padding : 12px 10px;
     height: 80px;
+    animation: show 2s;
 
 }
 .brand-logo{
@@ -38,7 +39,7 @@ body{
     margin-left: 20px;
 }
 .Nav-links a{
-    color: black;
+    color: #fff;
     display: flex;
     font-weight: 600;
     list-style: none;
@@ -50,13 +51,13 @@ body{
 .Nav-links ul{
     list-style: none;
     display: flex;
-    color : black;
+    
     font-weight: 500;
     font-size: 36px;
    
 }
 .Nav-links a:hover{
-    color: lightgray;
+    color: black;
 }
 .container{
     max-width: 1400px;
@@ -67,14 +68,31 @@ body{
     display: flex;
     flex-direction: column;
 }
-.image-wrapper{
-    background-image: url(Images/landing-page-girl.png);
-}
+
 .Text-section{
     flex-direction: column;    
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    animation: show 2s;
+}
+.Text-section::before{
+    opacity: 0;
+}
+.Text-section::after{
+    opacity: 1;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateX(300%);
+     
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+      
+    }
 }
 
 .Landing-page{

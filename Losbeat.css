@@ -20,4 +20,17 @@
     background-repeat: no-repeat;
     background-position: bottom left;
     background-image: url(Images/landing-page-girl.png);
+    animation: Direction 2.3s;
+}
+@keyframes Direction{
+    0%{
+        transform: translateY(100%);
+        overflow: hidden;
+    }
+    
+    100%{
+        transform: translateY(0%);
+        
+    }
+    
 }
