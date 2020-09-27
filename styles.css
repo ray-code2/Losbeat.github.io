@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #2F303A;
+  background:linear-gradient(to bottom,#39254D , #000c02);
   font-family: Poppins, sans-serif;
   font-size: 1.2rem;
   color: white;
@@ -28,6 +28,7 @@ body {
 }
 
 .brand-logo-name {
+
   margin-left: 1rem;
 }
 
@@ -60,7 +61,7 @@ body {
 
 .main-footer {
   height: 70px;
-  background-color: #202027;
+  background:linear-gradient(to top,#39254da8 , #000c02);
   font-weight: bold;
 }
 
@@ -96,20 +97,19 @@ body {
 
 .btn {
   color: white;
-  background-color: #1762A7;
+  background-color: #000000;
   padding: .75rem 1.5rem;
   border-radius: .5rem;
   text-decoration: none;
   font-size: .9rem;
   outline: none;
   border: none;
+  transition: all ease 0.4s;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #2180d8;
+  background-color: #292929;
+
 }
 
-.btn:focus {
-  background-color: #2796ff;
-}
