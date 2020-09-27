@@ -21,6 +21,7 @@ body{
     animation: show 2s;
 
 }
+
 .brand-logo{
     display: flex;
     justify-content: center;
@@ -46,14 +47,14 @@ body{
     align-items: center;
     text-decoration: none;
     line-height: 120px;
+    transition: all ease 0.4s;
     padding : 3.5rem;
 }
 .Nav-links ul{
     list-style: none;
     display: flex;
-    
     font-weight: 500;
-    font-size: 36px;
+    font-size: 26px;
    
 }
 .Nav-links a:hover{
@@ -74,23 +75,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    text-shadow: 5px 5px 14px rgba(27, 27, 27, 0.445);
     animation: show 2s;
 }
-.Text-section::before{
-    opacity: 0;
-}
-.Text-section::after{
-    opacity: 1;
-}
+
+
+
 @keyframes show {
     0%{
         opacity: 0;
-        transform: translateX(300%);
+   
      
     }
     100%{
         opacity: 1;
-        transform: translateX(0%);
+      
       
     }
 }
@@ -112,7 +111,12 @@ body{
     border-radius: 45px;
     font-size: 40px; 
     font-weight: bold;
+    box-shadow: 7px 8px 14px rgb(185, 118, 55);
     text-decoration: none;
+    transition: all ease 0.4s;
+}
+.btn:hover{
+    transform: scale(0.98) translateY(15px);
 }
 .title{
     font-weight: Bold;
@@ -122,7 +126,7 @@ body{
     align-items: center;
     font-weight: Bold;
     font-size: 48px;
-    color: #000000;
+    color: #110202;
 }
 .filler{
     height: 20px;
