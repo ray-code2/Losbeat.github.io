@@ -1,13 +1,18 @@
 body{
-  background:linear-gradient(to bottom, #000000,#39254d ,  #000000);
+  background:linear-gradient(to bottom, #000000,#39254d , #0e0d0d);
   background-repeat: no-repeat;
   font-family: sans-serif;
   overflow-x: hidden;
- 
+
 
 }
+.nav{
+  display: flex;
+  flex-direction: column;
+  
+}
 .brand{
- position: relative;
+  position: relative;
   color: white;
   font-size: 56px;
   justify-content: flex-start;
@@ -18,10 +23,9 @@ body{
   text-shadow: 5px 7px 16px #f6903d;
   margin-right: 15px;
   margin-top: 45px;
+  padding: 20px 30px;
 }
-.artist{
-  color: white;
-}
+
 .brand:hover{
   color: white;
 }
@@ -29,6 +33,10 @@ body{
   margin-right: 25px;
   margin-top: 15px;
 
+}
+.Home{
+  margin-left: -15px;
+  margin-top: 15px;
 }
 
 h2{
@@ -46,7 +54,7 @@ h2{
 }
 
 header {
-  background:#000c02;
+  background:rgb(37, 35, 35);
   display: flex;
 
   
@@ -56,19 +64,13 @@ header {
   animation: opacity 2s;
 }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 h5{
     color: #ff8f33;
-    top: 30px;
-    left: 20px;
+    margin-left: 50px;
     letter-spacing: 2px;
     font-size: 25px;
-    margin-right: 120px;
+    
     font-weight: 700;
 
 }
@@ -116,10 +118,10 @@ nav , a:hover{
 
 .Searchbar {
   margin-bottom: 20px;
+  margin-top: 100px;
   height: 50px;
   display: flex;
   width: 120%;
-
   background: white;
   border-radius: 20px;
 }
@@ -135,10 +137,10 @@ input{
 }
 #search::-webkit-search-cancel-button{
   position:relative;
-
   right:20px;  
   color: rgb(1, 0, 0);
   -webkit-appearance: none;
+  cursor: pointer;
   background-image: url(Images/cancel\ button.png);
   height: 50px;
   width: 50px;
@@ -152,14 +154,17 @@ input:focus::placeholder {
 .col-md-3{
   background-color:#292725;
   color: #e0e0e0;
-  max-height: 380px;
+  max-height: 400px;
   justify-content: flex-start;
   transform: scale(0.98);
+  border: 1px solid #fafbfb;
   border-radius: 20px;
   margin: 40px;
+  animation: BoxShadow 5.5s infinite;
+  
 }
 .col-md-3:hover{
-  animation: translate 0.4s ;
+  animation: translate 0.1s ;
 }
 .col-md-3 .Buttonhover {
   display: none;
@@ -176,19 +181,53 @@ input:focus::placeholder {
   cursor: pointer;
   animation: opacity 0.2s all ease;
 }
+.album{
+  display: block;
+  transform: scale(0.90);
+  transition: all ease 0.4s;
+}
+.album img{
+  width: 100%;
+    min-height: 250px;
+  transition: all ease 0.4s;
+}
+.album:hover{
+  box-shadow: 5px 6px 7px #c77029;
+  transform: scale(0.98) translateY(10px);
+}
+@keyframes BoxShadow{
+  0%{
+
+    box-shadow:  5px 7px 50px rgb(185, 59, 55);
+  }
+  25%{
+   
+    box-shadow:  5px 7px 55px rgb(87, 153, 114);
+  }
+  50%{
+
+    box-shadow: 5px 7px 50px rgb(204, 204, 204);
+  }
+  75%{
+    box-shadow:  5px 7px 50px  rgb(92, 68, 230);
+  }
+  100%{
+
+    box-shadow:  5px 7px 50px rgb(185, 59, 55);
+  }
+}
 @keyframes translate{
   0%{
     max-height: 350px;
   }
   100%{
-    max-height: 380px;
+    max-height: 400px;
   }
 }
 .album-poster img{
     width: 100%;
     min-height: 250px;
-   
-    animation: opacity 5s;
+    
    
 }
 
@@ -196,27 +235,24 @@ input:focus::placeholder {
 .album-poster{
     position: relative;
     display: block;
-   
-    overflow: hidden;
-    box-shadow: none;
     transform: scale(0.90);
-    transition: all ease 0.4s;
-}
-.album-poster:hover{
-    box-shadow: 7px 7px 15px #ddd6d2;
 
-
-    transform: scale(0.90) translateY(-10px);
 }
+
 
 
 h3{
     font-size: 34px;
-    margin-bottom: 34px;
+    margin-bottom: 15px;
+    margin-left: 25px;
     text-align: left;
     letter-spacing: 1px;
     color: whitesmoke;
     font-weight: bold;
+}
+.subtitle{
+  margin-left: 25px;
+  
 }
 p{
     font-size: 20px;
@@ -244,61 +280,61 @@ h4{
     position: fixed;
     bottom: -100%;
     left: 0;
+  
     width: 100%;
-    align-items: center;
-    box-shadow: 5px 5px 11px #ec8f50;
+    box-shadow: 4px 3px 11px #f8cf18;
     margin: 0px;
-    background:linear-gradient(to top,#c77029,#934596a2 );
-    transition: all ease 0.5s;
-    animation: opacity 1s;
-    border-radius: 5px;
+    background:rgb(37, 35, 35);
+  
+    border-radius: 10px;
    
 }
 
 #aplayer.showPlayer{
-    bottom: 0px;
+  
+    bottom: 5px;
 
 }
 
 
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+.aplayer .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+  background-color:rgba(255, 255, 255, 0.123)!important;
+  
 
-    height: 4px;
 }
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
     height: 4px;
     background-color:white!important;
 }
-.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+.aplayer .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+
     background-color: white !important;
   
 }
 
 .aplayer .aplayer-icon{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    
+    height: 30px;
 
 
 }
 
 .aplayer .aplayer-info .aplayer-music{
     margin-bottom: 2px;
-    color: #fff;
+    
+
 }
 
 span {
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.993);
+    color: rgba(251, 251, 251, 0.993);
     margin-bottom: 10px;
   }
+
  
-::placeholder{
-  color: #837e7e98;
-  font-size: 20px;
-  
-}
   .Copyright{
     align-items: center;
     display: flex;
@@ -320,15 +356,13 @@ span {
     
   }
 .navbar{
- 
-  width: 100%;
+
+  width: 110%;
   height: 70px;
   padding: 0 25px;
   display: flex;
   margin-right: 25px;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+ 
 }
 
 .navbar .navbar_left .logo a{
@@ -355,26 +389,29 @@ span {
 .navbar .navbar_right .notifications{
   position: relative;
 }
-
 .navbar .profile .profile_dd,
-.notification_dd {
+.notification_dd{
   position: absolute;
-  top: -80px;
-  right: -410px;
+  top: 65px;
+  right: -15px;
   user-select: none;
-  background:linear-gradient(to bottom,#39254D , #000c02);
+  background:black;
   animation: opacity 1s;
-  
+  border-radius: 32px;
+  border: 1px solid #c7d8e2;
+  width: 350px;
+  height: auto;
   display: none;
-  border-radius: 6px;
 
+  
 }
+
+
 .profile_ul{
-  align-items: center;
   margin-top: 10px;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-
 
 
 .navbar .navbar_right .profile .icon_wrap{
@@ -392,6 +429,7 @@ span {
  
 .navbar .profile .profile_dd{
   width: 245px;
+
   
   
 
@@ -405,7 +443,7 @@ span {
 .navbar .profile .profile_dd ul li  a{
     display: block;
     padding: 15px 35px;
-    position: relative;
+   
 }
 
 .navbar .profile .profile_dd ul li  a .picon{
