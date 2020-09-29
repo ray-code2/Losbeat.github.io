@@ -97,7 +97,7 @@ body {
 
 .btn {
   color: white;
-  background-color: #000000;
+  background-color:  #1762A7;
   padding: .75rem 1.5rem;
   border-radius: .5rem;
   text-decoration: none;
@@ -109,7 +109,10 @@ body {
 }
 
 .btn:hover {
-  background-color: #292929;
+  background-color: #2180d8;
 
+}
+.btn:focus {
+  background-color: #2796ff;
 }
 
