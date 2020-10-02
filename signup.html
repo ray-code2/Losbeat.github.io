@@ -24,42 +24,34 @@
             </ul>
         </nav>
     </header>
-    <div class="error"></div>
+
     
-        <form class="login" id="form" action="/" method="GET">
+        <form class="login" id="form" action="/HomeLanding.html" method="GET">
 
             <h1 class="createacc">
                 Create Account
             </h1>
             <div class="textbox">
             <p>Username</p>
-            <input id="Username" type="text" name="Username" placeholder="Enter Username">
-        </div>
-        <div class="textbox">
+            <input id="username" type="text" placeholder="Enter Username" required>
             <p>Email</p>
-            <input id="Email" type="email" name="Email" placeholder="Enter Email";>
-        </div>
-        <div class="textbox">
+            <input id="Email" type="email" placeholder="Enter Email" required>
             <p>Password</p>
-            <input id="Password" type="password" name="Password" placeholder="Enter Password";>
-        </div>
-        <div class="textbox">
+            <input id="Password" type="password" placeholder="Enter Password" required>
             <p>Confirm Password</p>
-            <input id="Confirm Password" type="password" name="Confpass" placeholder="Confirm Password";>
+            <input id="Confirm Password" type="password"  placeholder="Confirm Password" required>
         </div>
         <label class="container">
-            <input type="checkbox" checked="checked">
+            <input type="checkbox" checked="checked" checked required>
             <span class="checkmark"></span>
           </label>
         <div class="condition">
             <span>I Agree to <a class="terms" href="Losbeat-terms-conditions.pdf">The Terms & Conditions</a></span>
         </div>
         
-        </div>
         
-        <a href="HomeLanding.html">
-        <input class="btn" type="button" name="Submit" value="Submit">
-        </a>
+        <input class="btn" type="submit" value="Submit" required>
+        
 </form>
 </body>
 </html>
