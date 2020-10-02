@@ -7,174 +7,7 @@ body{
     min-height: 100vh;
     overflow: hidden;
     font-family: sans-serif;
-    background:linear-gradient(to bottom,#c27474,#39254d );
-}
-h1{
-    margin-left: 75px;
-}
-
-/* The container */
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    align-items: center;
-    justify-items: center;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: -35px;
-    transform: scale(1);
-    margin-top: 27px;
-    transition: all ease 0.4s;
-    margin-left: 15px;
-    height: 25px;
-    width: 25px;
-    background-color: none;
-    border: 1px solid #fff;
-  }
-  .checkmark:hover{
-    border: 1px solid #3C99DC;
-  }
-  .condition{
-      margin-top: 25px;
-      margin-left: 20px;
-      margin-bottom: 5px;
-      font-size: 18px;
-
-  }
-  input:focus::placeholder {
-    color: transparent;
-  }
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-    overflow: hidden;
-    background-color: transparent;
-  }
-  
-  
-  
-  .terms{
-      color: #fff;
-  }
-  
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
-  
-.createacc{
-    width: 300px;
-    margin-left:15px; 
- 
-}
-
-
-.login{
-    width: 280px;
-    position: absolute;
-    top:50%;
-    transition: all ease 0.4s;
-    left:50%;
-    transform:translate(-50%,-50%);
-    color:white;
-    animation: direction 2s;
-  
-}
-@keyframes direction{
-    0%{
-        transform: translateY(200%);
-    }
-    100%{
-     transform: translate(-50% , -50%);
-     
-    }
-}
-@keyframes show {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-.textbox{
-    width:100%;
-    overflow:hidden;
-    font-size: 20px;
-    transition: all ease 0.4s;
-    border-bottom: 1px solid white;
-}
-.textbox:hover{
-    border-bottom: 1px solid #3C99DC;
-}
-
-.textbox input{
-    width: 100%;
-    border:none;
-    outline:none;
-    background:none;
-    color:white;
-    font-size: 18px;
-  
-    margin:0 10px;
-}
-.btn{
-    width:100%;
-    background:none;
-    border: 1px solid #ffffff;
-    border-radius: 15px;
-    color:white;
-    padding:5px;
-    cursor: pointer;
-    transition: all ease 0.4s;
-    font-size:18px;
-    margin-top: 20px;
-}
-.btn:hover{
-    border: 1px solid #3C99DC;
-    color: #3C99DC;
-    font-weight: 500;
-}
-h1{
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+    background:linear-gradient(to bottom,#c27474,#39254D);
 }
 .Navigation{
 
@@ -230,4 +63,173 @@ h1{
 .Nav-links a:hover{
     color: #2F303A;
   
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    transform: scale(1);
+    margin-top: 15px;
+    transition: all ease 0.4s;
+    margin-left: 17px;
+    height: 25px;
+    width: 25px;
+    background-color: none;
+    border: 1px solid #fff;
+  }
+  .checkmark:hover{
+    border: 1px solid #3C99DC;
+  }
+  .condition {
+      margin-top: 25px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      font-size: 18px;
+
+  }
+  input:focus::placeholder {
+    color: transparent;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  
+  
+  .terms{
+      color: #fff;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  
+.createacc{
+    width: 300px;
+    margin-left:15px; 
+ 
+}
+
+
+.login{
+
+    position: absolute;
+    top:50%;
+    transition: all ease 0.4s;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    animation: direction 2s;
+    padding: 20px 40px;
+
+}
+
+.textbox{
+    width:100%;
+    overflow:hidden;
+    font-size: 20px;
+    transition: all ease 0.4s;
+    padding: 8px 0 ;
+    margin: 8px 0;
+
+
+}
+
+
+.textbox input{
+    width: 100%;
+    border:none;
+    outline:none;
+    background:none;
+    color:white;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    transition: all ease 0.4s;
+}
+input:hover{
+
+    border-bottom: 1px solid  #3C99DC;
+}
+
+
+.btn{
+    width:100%;
+    background:none;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    color:white;
+    padding:5px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    font-size:18px;
+    margin-top: 20px;
+}
+.btn:hover{
+    border: 1px solid #3C99DC;
+    color: #3C99DC;
+    font-weight: 500;
+}
+
+@keyframes direction{
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+     transform: translate(-50% , -50%);
+     
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
