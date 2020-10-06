@@ -86,17 +86,16 @@
                         </div>
                         <div class="profile">
                           <div class="icon_wrap">
-                            <img src="images/profile_pic.png" alt="profile_pic">
-                            <a class="name">Ferdy Kun</a>
+                            <li class="profile_li"><a class="profile" href="#"><span class="picon"><i class="fas fa-user-alt"></i>
+                            <span class="name" id="Pname"></span>
                             <i class="fas fa-chevron-down"></i>
                           </div>
                   
                           <div class="profile_dd">
                             <ul class="profile_ul">
-                              <li class="profile_li"><a class="profile" href="#"><span class="picon">
-                                <img src="images/profile_pic.png" alt="profile_pic">
-                                  </span>Profile</a>
-                              </li>
+                              <li><a class="Profile" href="#"><span class="picon"> <i class="fas fa-user-alt"></i></span>Profile</a></li>
+
+
                               <li><a class="address" href="#"><span class="picon"><img src="https://img.icons8.com/ios/50/ff8f33/playlist.png"></span>Playlist</a></li>
                               <li><a class="settings" href="#"><span class="picon"><img src="https://img.icons8.com/ios/50/ff8f33/music-library.png"></span>Library</a></li>
                               <li><a class="logout" href="Losbeats.html"><span class="picon"><img src="https://img.icons8.com/metro/50/ff8f33/export.png"></span>Logout</a></li>
@@ -519,8 +518,11 @@
                         artist: 'Gracie Abrams',
                         cover: 'https://cdns-images.dzcdn.net/images/cover/b54da7b338d2e5e399b183531207ade7/264x264.jpg',
                     },
+                  
+                   
                     ]
                 });
+              
             </script>
           
 
@@ -533,7 +535,9 @@
                     <li><a href="https://github.com/Kelompok12-WebprogrammingA/Music-app-project">About Us</a></li>
                     <li><a href="Losbeat-terms-conditions.pdf">Terms And Conditions</a></li>
                   </ul>
-
+    <script>
+        document.getElementById("Pname").innerHTML = localStorage.getItem("TextValues");
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
