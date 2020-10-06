@@ -8,6 +8,7 @@
     <link href="signup.css" rel="Stylesheet">
 </head>
 <script defer src="signup.js"></script>
+
 <body>
   
     <header class="Navigation">
@@ -39,7 +40,7 @@
             <p>Password</p>
             <input id="Password" type="password" placeholder="Enter Password" required>
             <p>Confirm Password</p>
-            <input id="Confirm Password" type="password"  placeholder="Confirm Password" required>
+            <input id="Confirm" type="password"  placeholder="Confirm Password" required>
         </div>
         <label class="container">
             <input type="checkbox" checked="checked" checked required>
@@ -50,8 +51,18 @@
         </div>
         
         
-        <input class="btn" type="submit" value="Submit" required>
+        <input class="btn" type="submit" value="Submit" onclick="passValues();" required>
         
 </form>
+<script>
+    function passValues(){
+    var Profile_name = document.getElementById("username").value;
+    localStorage.setItem("TextValues" , Profile_name);
+    return false;
+}
+</script>
+
+
+
 </body>
 </html>
