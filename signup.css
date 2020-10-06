@@ -50,6 +50,7 @@ body{
     align-items: center;
     text-decoration: none;
     line-height: 5px;
+    transition: all ease 0.4s;
     padding : 2px;
     justify-content: space-between;
 }
