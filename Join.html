@@ -28,7 +28,7 @@
                 <input type="password" placeholder="Enter Password" required>
             </div>
             
-            <input class="btn" type="submit" value="Sign in">
+            <input class="btn" type="submit" value="Sign in" onclick="passValues();">
            
             <a href="forgotpassword.html">
                 <input class="btn" type="button" value="Forgot Password?">
@@ -37,7 +37,14 @@
            
 
         </form>
-
+<script>
+    function passValues(){
+    var Profile_name = document.getElementById("username").value;
+    localStorage.setItem("TextValues" , Profile_name);
+    return false;
+    }
+ 
+</script>
 
 </body>
 </html>
