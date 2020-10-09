@@ -1,6 +1,6 @@
 # Music-app-project
 
-Project Name : Losbeat
+Project Name : Losbeats
 
 1.Raymond Tjahyadi (535190030)
 - Design Concept Of Losbeat
