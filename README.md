@@ -23,4 +23,4 @@ Project Name : Losbeats
 
 
 
-Link menuju homepage https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeats.html
+Link menuju Losbeat Landing page https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeats.html
