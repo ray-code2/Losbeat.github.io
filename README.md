@@ -20,3 +20,5 @@ Project Name : Losbeats
 5.Bunardi Budiman (535170016)
 
 - Add Music Player JS
+Link menuju repo https://kelompok12-webprogramminga.github.io/Losbeat.github.io/
+Link menuju homepage https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeat.html
