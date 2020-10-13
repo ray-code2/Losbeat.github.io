@@ -21,4 +21,4 @@ Project Name : Losbeats
 
 - Add Music Player JS
 Link menuju repo https://kelompok12-webprogramminga.github.io/Losbeat.github.io/
-Link menuju homepage https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeat.html
+Link menuju homepage https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeats.html
