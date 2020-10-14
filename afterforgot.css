@@ -6,6 +6,7 @@ body{
 .link{
     font-size: 26px;
     font-weight: 500;
+    transition: all ease 0.4s;
 }
 
 .link:hover{
