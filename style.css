@@ -111,7 +111,7 @@ body{
     border-radius: 45px;
     font-size: 40px; 
     font-weight: bold;
-    box-shadow: 7px 8px 14px rgb(185, 118, 55);
+    box-shadow: 3px 4px 44px rgb(0, 0, 0);
     text-decoration: none;
     transition: all ease 0.4s;
 }
