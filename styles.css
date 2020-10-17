@@ -9,7 +9,7 @@ body {
   margin: 0;
   background:linear-gradient(to bottom,#39254D , #000c02);
   font-family: Poppins, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   min-height: 100vh;
 }
@@ -97,22 +97,21 @@ body {
 
 .btn {
   color: white;
-  background-color:  #1762A7;
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
+  background: #6565c2;
+  padding: 15px;
+  border-radius: 15px;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: 1.1rem;
   outline: none;
+  margin-top: 30px;
   border: none;
   transition: all ease 0.4s;
   cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #2180d8;
+  background-color: #7272dd;
 
 }
-.btn:focus {
-  background-color: #2796ff;
-}
+
 
