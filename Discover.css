@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: -60px;
     flex-grow: 1;
     animation: show 2s ;
   }
@@ -23,11 +24,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 1.8rem;
-    padding: .75rem;
+    margin-right: 2.5rem;
+    padding: .65rem;
     border-radius: 10px;
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     background-color: #6565c2;
     transition: all ease 0.4s;
     margin-bottom: 2rem;
