@@ -27,7 +27,7 @@
     </header>
 
     
-        <form class="login" id="form" action="HomeLanding.html" method="GET">
+        <form class="login" id="form" action="/HomeLanding.html" method="GET">
 
             <h1 class="createacc">
                 Create Account
@@ -38,9 +38,9 @@
             <p>Email</p>
             <input id="Email" type="email" placeholder="Enter Email" required>
             <p>Password</p>
-            <input id="Password" type="password" placeholder="Enter Password" required>
+            <input id="txtPassword" type="password" placeholder="Enter Password" required>
             <p>Confirm Password</p>
-            <input id="Confirm" type="password"  placeholder="Confirm Password" required>
+            <input id="txtConfirmPassword" type="password"  placeholder="Confirm Password" required>
         </div>
         <label class="container">
             <input type="checkbox" checked="checked" checked required>
@@ -51,7 +51,7 @@
         </div>
         
         
-        <input class="btn" type="submit" value="Submit" onclick="passValues();" required>
+        <input id= "submit" class="btn" type="submit" value="Submit" onclick="Validate();" required>
         
 </form>
 <script>
@@ -59,7 +59,23 @@
     var Profile_name = document.getElementById("username").value;
     localStorage.setItem("TextValues" , Profile_name);
     return false;
+    
 }
+function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            
+            document.getElementById('submit').disabled = true;
+            location.replace("/signup.html");
+            return false;
+        }
+        document.getElementById('submit').disabled = false;
+        return passValues();
+        
+
+    }
 </script>
 
 
