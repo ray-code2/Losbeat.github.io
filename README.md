@@ -26,7 +26,7 @@ Project Name : Losbeats
 
 - Add Music Player JS
 
-
+Disclaimer: size mungkin ada perbedaan pada browser yang berbeda. Mohon di zoom out atau zoom in seperlunya.
 
 Link menuju Losbeat Landing page https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeats.html
 
