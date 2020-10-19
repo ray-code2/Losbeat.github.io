@@ -18,7 +18,7 @@
     max-width: 80vw;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: bottom;
     background-image: url(Images/landing-page-girl.png);
     transform: scale(2.25) translateY(-27.8%) translateX(-20%);
     animation: Direction 2.3s;
