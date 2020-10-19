@@ -24,10 +24,10 @@ Project Name : Losbeats
 
 
 Link menuju Losbeat Landing page https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Losbeats.html
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
-[!githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
+![githublogo](https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif)
 
