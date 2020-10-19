@@ -19,17 +19,17 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-image: url(Images/landing-page-girl.png);
-    transform: scale(1.5) translateY(-27.8%) translateX(-20%);
+    transform: scale(2.25) translateY(-27.8%) translateX(-20%);
     animation: Direction 2.3s;
 }
 @keyframes Direction{
     0%{
-        transform: scale(1.5) translateY(100%) translateX(-20%);
+        transform: scale(2.25) translateY(100%) translateX(-20%);
         overflow: hidden;
     }
     
     100%{
-        transform: scale(1.5) translateY(-27.8%) translateX(-20%);
+        transform: scale(2.25) translateY(-27.8%) translateX(-20%);
         
     }
     
