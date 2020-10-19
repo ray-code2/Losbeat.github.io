@@ -24,12 +24,12 @@
 }
 @keyframes Direction{
     0%{
-        transform: translateY(100%);
+        transform: scale(2.25) translateY(100%) translateX(-20%);
         overflow: hidden;
     }
     
     100%{
-        transform: translateY(0%);
+        transform: scale(2.25) translateY(-27.0%) translateX(-20%);
         
     }
     
