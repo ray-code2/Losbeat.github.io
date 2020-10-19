@@ -14,7 +14,7 @@
 }
 .Landing-page .lady-image{
     flex-grow: 1;
-    background: contain;
+    background-size: contain;
     max-height: 100vh;
     max-width: 80vw;
     background-repeat: no-repeat;
