@@ -16,7 +16,6 @@
     flex-grow: 1;
     max-height: 100vh;
     max-width: 80vw;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
     background-image: url(Images/landing-page-girl.png);
