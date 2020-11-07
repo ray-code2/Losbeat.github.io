@@ -5,13 +5,10 @@ body{
     font-family: sans-serif , 'montserrat';
     background-color: rgb(224, 219, 219);
 }
-header{
-    background:black;
-    margin:0;
-    padding: 0;
-}
+
 .Navigation{
     display:flex;
+    background-color: black;
     justify-content: space-between;
     list-style: none;
     align-items: center;
@@ -39,26 +36,32 @@ header{
     font-size: 36px;
     margin-left: 20px;
 }
-.Nav-links a{
-    color: #fff;
-    display: flex;
-    font-weight: 600;
-    list-style: none;
-    align-items: center;
-    text-decoration: none;
-    line-height: 120px;
-    transition: all ease 0.4s;
-    padding : 3.5rem;
-}
+
+
 .Nav-links ul{
-    list-style: none; 
-    display: flex;
-    font-weight: 500;
-    font-size: 26px;
    
+    display: flex;
+
+
+
 }
+
+.Nav-links ul li{
+    margin: 40px;
+    display: flex;
+    
+   list-style: none;
+
+}
+.Nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all ease 0.4s;
+    font-size: 20px;
+}
+
 .Nav-links a:hover{
-    color: rgb(107, 71, 71);
+    color: rgb(196, 136, 136);
 }
 section{
   margin: 0;
@@ -78,6 +81,9 @@ h1{
     color: white;
     text-align: center;
 }
+h2{
+    color: rgb(196, 71, 71);
+}
 .pg{
     display: flex;
     color: white;
@@ -93,30 +99,62 @@ h1{
 .pg img{
     margin-right: 20px;
 }
- 
-b{
+
+b {
     font-size: 20px;
+    color: rgb(196, 71, 71);
 }
+
 .contain{
 align-items: center;
 justify-content: center;
 width:550px;
+height: 280px;
 padding: 20px;
 margin-top: 40px;
+border-radius: 20px;
+margin-bottom: 80px;
+top : 50%;
+left: 50%;
+transform: translate(-50% , 5%);
 position: relative;
-transform: translateX(110%);
 background-color: rgb(238, 238, 237);
-box-shadow: 1px 2px 1px black;
 border: 2px solid rgb(206, 205, 205);
-margin-bottom: 50px;
 }
+@media only screen and (max-width: 900px){
+    .container{
+        background-color: #39254D;
+        height: 55vh;
+        padding: 30px;
+        color: #ffffff;
+      }
+
+      .pg {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+        margin: 50px;
+        font-size: 25px;
+        padding: 18px;
+        justify-content: center;
+      }
+      .pg img{
+          display: none;
+      }
+      .Nav-links a{
+        display: none;
+      }
+   
+    }
+    
 a{
-    color: black;
-    font-size: 17px;
+    color: rgb(196, 71, 71);
+    font-size: 18px;
 }
 
 span{
-    font-size: 17px;
+    font-size: 20px;
 }
 .btn{
     font-family: sans-serif;
@@ -126,17 +164,16 @@ span{
     border: 1px solid #ffffff;
     color:white;
     padding:25px;
-    border-radius: 35px;
+    border-radius: 45px;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 25px;
     width: 300px;
-    transition: all ease 0.1s;
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 24px;
+    transition: all ease 0.4s;
+    font-weight: bold;
+
 }
 .btn:hover{
-
-    background: rgb(29, 26, 26);
-    font-weight: bolder;
-    box-shadow: 7px 7px 27px rgb(0, 0, 0);
+ background: rgb(52, 52, 52);
 }
+
