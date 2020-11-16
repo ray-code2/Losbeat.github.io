@@ -94,7 +94,8 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 45px;
+  margin-top: 20px;
   padding-top: 15px;
   position: relative;
   text-decoration: none;
