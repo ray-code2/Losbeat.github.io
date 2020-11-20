@@ -73,6 +73,7 @@ body{
 .Text-section{
     flex-direction: column;    
     display: flex;
+    margin-bottom: 150px;
     justify-content: center;
     align-items: flex-start;
     text-shadow: 5px 5px 14px rgba(27, 27, 27, 0.445);
@@ -126,7 +127,8 @@ body{
     align-items: center;
     font-weight: Bold;
     font-size: 48px;
-    color: #110202;
+font-family: 'Heebo', sans-serif;
+    color: #fdf4f4;
 }
 .filler{
     height: 20px;
