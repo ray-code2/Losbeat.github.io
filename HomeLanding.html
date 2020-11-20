@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
     <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/e952733f4e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -54,19 +55,44 @@
                 
               <nav>
              
-                <form class="form-search">
                     <div class="Searchbar">
-                        <img src="https://img.icons8.com/fluent-systems-regular/48/e0e0e0/search.png"/>
-                    <input id="search"type="search" placeholder="Search for Artists, Songs, Or Podcasts" >
+
+
+                    <input id="search" onkeyup="SongSearch()" type="text" placeholder="Search for Artists, Songs, Or Podcasts..." >
+                    <ul id="Songs">
+                        <li><a href="#">Liquid Time</a></li>
+                        <li><a href="#">Dynamite</a></li>
+                        <li><a href="#">invisible_beauty</a></li>
+                        <li><a href="#">just_stay</a></li>
+                        <li><a href="#">Silky Smooth</a></li>
+                        <li><a href="#">Friend</a></li>
+                        <li><a href="#">Escaping Time</a></li>
+                        <li><a href="#">Ice Cream (with SELENA GOMEZ)</a></li>
+                        <li><a href="#">Catcher</a></li>
+                        <li><a href="#">New Thang</a></li>
+                        <li><a href="#">Good Morning Heartache</a></li>
+                        <li><a href="#">Not For Nothing</a></li>
+                        <li><a href="#">Autumn Leaves</a></li>
+                        <li><a href="#">Surrender</a></li>
+                        <li><a href="#">Sea Change</a></li>
+                        <li><a href="#">Know bout me</a></li>
+                        <li><a href="#">Heather Conan</a></li>
+                        <li><a href="#">Tap In</a></li>
+                        <li><a href="#">New Thang</a></li>
+                        <li><a href="#">Lets Link</a></li>
+                        <li><a href="#">Not to Cry</a></li>
+                        <li><a href="#">Otis Mcmusic</a></li>
+                        <li><a href="#">CYKA BLYAT</a></li>
+                       </ul>
                 </div>
-                </form>
+
                 
                 <div class="wrapper">
                     <div class="navbar">
                         <img src="https://img.icons8.com/fluent-systems-filled/48/e0e0e0/home.png"/>
                       <div class="navbar_left">
                         <div class="Home">
-                          <a href="HomeLanding.html">Home</a>
+                          <a class="current" href="HomeLanding.html">Home</a>
                         </div>
                       </div>
 
@@ -122,7 +148,7 @@
                   
                 </div>
                 <div class="col-md-3">
-                    <a href="javascript:void();" class="album-poster" data-switch="0">
+                    <a href="#" class="album-poster" data-switch="0">
                         
                         <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
             
@@ -175,13 +201,13 @@
         
                 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-left">
                         <br>
                         <br>
                         <h3>Focus</h3>
                         <p class="subtitle">Music to help you concentrate.</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="9">
                             <img src="https://i1.sndcdn.com/artworks-000669138907-0bmgqq-t500x500.jpg" alt="" >
                         </a>
@@ -189,7 +215,7 @@
                         <h4>Autumn Leaves</h4>
                         <p>Vensterbank , poky, sea flap-flap</p>
                     </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <a href="#" class="album-poster" data-switch="10">
                         <img src="https://i.scdn.co/image/ab67616d0000b27310678e3a1e1309ec52e193dd" alt="" >
                     </a>
@@ -197,7 +223,7 @@
                     <h4>Escaping Time</h4>
                     <p>Benjamin Martin</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <a href="#" class="album-poster" data-switch="11">
                         <img src="https://d34qmkt8w5wll9.cloudfront.net/commercial-releases/cover_art/jpeg/699.jpg" alt="" >
                     </a>
@@ -205,7 +231,7 @@
                     <h4> Catcher</h4>
                     <p>Hana Noda</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <a href="#" class="album-poster" data-switch="12">
                         <img src="https://i.scdn.co/image/ab67616d0000b273c0e8f9403e1474618e38c78f" alt="" >
                     </a>
@@ -213,7 +239,7 @@
                     <h4>In The Blue of Evening</h4>
                     <p>Asi Kaplan Jazz Band</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <a href="#" class="album-poster" data-switch="13">
                         <img src="https://i.kfs.io/album/global/70569533,1v1/fit/500x500.jpg" alt="" >
                     </a>
@@ -221,7 +247,7 @@
                     <h4>Good Morning Heartache</h4>
                     <p>Sixth Street Quartet</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-aos="fade-up">
                     <a href="#" class="album-poster" data-switch="8">
                         <img src="https://mtv-intl.mtvnimages.com/uri/mgid:arc:content:mtvasia.com:fe0cbb56-9a52-11ea-9225-70df2f866ace?ep=mtvasia.com&stage=live&format=jpg&quality=0.8" alt="" >
                     </a>
@@ -231,13 +257,13 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-aos="fade-right">
                         <br>
                         <br>
                         <h3>Mood</h3>
                         <p class="subtitle">Playlists to match your mood.</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="javascript:void();" class="album-poster" data-switch="0">
                             <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                         </a>
@@ -245,7 +271,7 @@
                         <h4>No CopyRights Music </h4>
                         <p>Invisible Beauty</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="1">
                             <img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                         </a>
@@ -253,7 +279,7 @@
                         <h4>No CopyRights Music</h4>
                         <p>Just Stay</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="2">
                             <img src="https://images.pexels.com/photos/838696/pexels-photo-838696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                         </a>
@@ -262,7 +288,7 @@
                         <p>Liquid Time</p>
                     </div>
             
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="3">
                             <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                         </a>
@@ -270,7 +296,7 @@
                         <h4>No CopyRights Music</h4>
                         <p>Silky Smooth</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="16">
                             <img src="https://cdns-images.dzcdn.net/images/cover/b54da7b338d2e5e399b183531207ade7/264x264.jpg" alt="" >
                         </a>
@@ -278,7 +304,7 @@
                         <h4>Friend</h4>
                         <p>Gracie Abrams</p>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="fade-up">
                         <a href="#" class="album-poster" data-switch="1">
                             <img src="https://images.pexels.com/photos/1370545/pexels-photo-1370545.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                         </a>
@@ -288,13 +314,13 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" data-aos="fade-left">
                             <br>
                             <br>
                             <h3>Viral Hits</h3>
                             <p class="subtitle">Viral, trending and taking off</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="javascript:void();" class="album-poster" data-switch="17">
                                 <img src="https://cdn2.tstatic.net/wow/foto/bank/images/lagu-surrender-yang-dipopulerkan-oleh-natalie-taylor-sering-diputar-di-aplikasi-tiktok.jpg" alt="" >
                             </a>
@@ -302,7 +328,7 @@
                             <h4>Surrender</h4>
                             <p>Natalie Taylor</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="#" class="album-poster" data-switch="18">
                                 <img src="https://s3.amazonaws.com/broadtime_photo/418460159226" alt="" >
                             </a>
@@ -310,7 +336,7 @@
                             <h4>Know bout me</h4>
                             <p>Pop Smoke</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="#" class="album-poster" data-switch="19">
                                 <img src="https://lipstiq.com/wp-content/uploads/2016/06/redfoo.jpg" alt="" >
                             </a>
@@ -318,7 +344,7 @@
                             <h4>New Thang</h4>
                             <p>Redfoo</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="#" class="album-poster" data-switch="20">
                                 <img src="https://express-images.franklymedia.com/6616/sites/1149/2020/08/06173435/conangray.png" alt="" >
                             </a>
@@ -326,7 +352,7 @@
                             <h4>Heather Conan</h4>
                             <p>Conan Gray</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="#" class="album-poster" data-switch="21">
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNGF-p_Xp7BgC-I46LkthBK5F6_ijnoPP8Xg&usqp=CAU" alt="" >
                             </a>
@@ -334,7 +360,7 @@
                             <h4>Tap In</h4>
                             <p>Saweetie</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3" data-aos="fade-up">
                             <a href="#" class="album-poster" data-switch="22">
                                 <img src="https://i.ytimg.com/vi/EIRTnuwUPBw/mqdefault.jpg" alt="" >
                             </a>
@@ -345,24 +371,24 @@
 
             
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" data-aos="fade-left">
                     <h3>New Releases</h3>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                     </a>
                     <h4>Tatiana</h4>
                     <p>Still Love YOU</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                     </a>
                     <h4>Tatiana</h4>
                     <p>BREAK!</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                     </a>
@@ -370,21 +396,21 @@
                     <p>Outspace</p>
                 </div>
                 
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                     </a>
                     <h4>Lyana</h4>
                     <p>Bella Ciao</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                     </a>
                     <h4>Letty</h4>
                     <p>Up and Down</p>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2" data-aos="flip-down">
                     <a href="#" class="album">
                         <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                     </a>
@@ -394,24 +420,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" data-aos="fade-right">
                 <h3>Top Hits</h3>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" >
                 </a>
                 <h4>Tatiana</h4>
                 <p>Still Love YOU</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
                 </a>
                 <h4>Tatiana</h4>
                 <p>BREAK!</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
                 </a>
@@ -419,21 +445,21 @@
                 <p>Outspace</p>
             </div>
             
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
                 </a>
                 <h4>Lyana</h4>
                 <p>Bella Ciao</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
                 </a>
                 <h4>Letty</h4>
                 <p>Up and Down</p>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2" data-aos="flip-up">
                 <a href="#" class="album">
                     <img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" style="width: 100%;min-height: 250px;">
                 </a>
@@ -641,8 +667,41 @@
 
          <script>
               document.getElementById("Pname").innerHTML = localStorage.getItem("TextValues");
+            
+              
         </script>
+        <script>
+           function SongSearch() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("Songs");
+    li = ul.getElementsByTagName('li');
 
+    if(input.value.length == 0){
+        ul.style.display = "none";
+    }else{
+        ul.style.display = "block";
+    }
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+            </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      duration: 700,
+      offset: 200
+  });
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>	
