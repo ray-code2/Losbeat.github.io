@@ -158,7 +158,7 @@
                     <h4 >No CopyRights Music </h4>
                     <p>Invisible Beauty</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3"> 
                     <a href="#" class="album-poster" data-switch="14">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWeTpQ9xcYKaJC-nkQ8BtybZJqdZ9L4UwcKQ&usqp=CAU" alt="" >
                     </a>
@@ -688,7 +688,7 @@
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        if (a.innerHTML.toUpperCase().indexOf(filter) == 0) {
             li[i].style.display = "block";
         } else {
             li[i].style.display = "none";
