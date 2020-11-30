@@ -179,6 +179,9 @@ body{
   
   .terms{
       color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      margin-top: 5px;
   }
   
   .container input:checked ~ .checkmark:after {
