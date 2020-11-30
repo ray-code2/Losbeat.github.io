@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link href="signup.css" rel="Stylesheet">
+    
 </head>
 <script defer src="signup.js"></script>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
   
     <header class="Navigation">
@@ -25,14 +27,25 @@
             </ul>
         </nav>
     </header>
+    <div class="head">
+        <h1 class="createacc">
+            Create Account
+        </h1>
+        <div class="name">
+            <p>Firstname</p>
+            <input id="firstname" type="text" placeholder="your Firstname" required>
+            <p>Lastname:</p>
+            <input id="lastname" type="text" placeholder="your Lastname" required>
+        </div>
 
-    
+    </div>
+ 
         <form class="login" id="form" action="HomeLanding.html" method="GET">
 
-            <h1 class="createacc">
-                Create Account
-            </h1>
+           
             <div class="textbox">
+                
+            
             <p>Username</p>
             <input id="username" type="text" placeholder="Enter Username" required>
             <p>Email</p>
@@ -56,6 +69,7 @@
             <input class="btn" type="button" value="Already Have an Account?">
         </a>
 </form>
+
 <script>
     function passValues(){
     var Profile_name = document.getElementById("username").value;
@@ -79,7 +93,6 @@ function Validate() {
 
     }
 </script>
-
 
 
 </body>
