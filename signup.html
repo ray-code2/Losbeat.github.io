@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Page</title>
     <link href="signup.css" rel="Stylesheet">
+    
 </head>
 <script defer src="signup.js"></script>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <body>
   
     <header class="Navigation">
@@ -25,37 +27,53 @@
             </ul>
         </nav>
     </header>
-
-    
-        <form class="login" id="form" action="HomeLanding.html" method="GET">
-
+    <main class="contain">
+        <div class="head">
             <h1 class="createacc">
                 Create Account
             </h1>
-            <div class="textbox">
-            <p>Username</p>
-            <input id="username" type="text" placeholder="Enter Username" required>
-            <p>Email</p>
-            <input id="Email" type="email" placeholder="Enter Email" required>
-            <p>Password</p>
-            <input id="txtPassword" type="password" placeholder="Enter Password" required>
-            <p>Confirm Password</p>
-            <input id="txtConfirmPassword" type="password"  placeholder="Confirm Password" required>
+           
+    
         </div>
-        <label class="container">
-            <input type="checkbox" checked="checked" checked required>
-            <span class="checkmark"></span>
-          </label>
-        <div class="condition">
-            <span>I Agree to <a class="terms" href="Losbeat-terms-conditions.pdf">The Terms & Conditions</a></span>
-        </div>
-        
-        
-        <input id= "submit" class="btn" type="submit" value="Submit" onclick="Validate();" required>
-        <a href="Join.html">
-            <input class="btn" type="button" value="Already Have an Account?">
-        </a>
-</form>
+     
+            <form class="login" id="form" action="HomeLanding.html" method="GET">
+    
+                <div class="name">
+                    <p>Firstname:</p>
+                    <input id="firstname" type="text" placeholder="your Firstname" required>
+                    <p>Lastname:</p>
+                    <input id="lastname" type="text" placeholder="your Lastname" required>
+                </div>
+                <div class="textbox">
+                    
+                
+                <p>Username</p>
+                <input id="username" type="text" placeholder="Enter Username" required>
+                <p>Email</p>
+                <input id="Email" type="email" placeholder="Enter Email" required>
+                <p>Password</p>
+                <input id="txtPassword" type="password" placeholder="Enter Password" required>
+                <p>Confirm Password</p>
+                <input id="txtConfirmPassword" type="password"  placeholder="Confirm Password" required>
+            </div>
+            <label class="container">
+                <input type="checkbox" checked="checked" checked required>
+                <span class="checkmark"></span>
+              </label>
+            <div class="condition">
+                <span>I Agree to <a class="terms" href="Losbeat-terms-conditions.pdf">The Terms & Conditions</a></span>
+            </div>
+            
+            
+            <input id= "submit" class="btn" type="submit" value="Submit" onclick="Validate();" required>
+            <a href="Join.html">
+                <input class="btn" type="button" value="Already Have an Account?">
+            </a>
+    </form>
+
+    </main>
+    
+
 <script>
     function passValues(){
     var Profile_name = document.getElementById("username").value;
@@ -79,7 +97,6 @@ function Validate() {
 
     }
 </script>
-
 
 
 </body>
