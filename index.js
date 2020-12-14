@@ -84,7 +84,7 @@ app.post('/create/homepage', (req, res) => {
        console.log(err)
    })
    // Losbeat Terms And Conditions
-app.get('/terms', (req, res) => {
-   res.sendFile('./Views/Losbeat-terms-conditions.pdf', {root:__dirname})
+app.get('/terms' , (req , res) => {
+   res.sendFile('./Views/Losbeat-terms-conditions.pdf' , {root:__dirname})
 })
 });
