@@ -28,7 +28,7 @@ Project Name : Losbeats
 
 Disclaimer: size mungkin ada perbedaan pada browser yang berbeda. Mohon di zoom out atau zoom in seperlunya.
 
-Link menuju Losbeat Landing page https://kelompok12-webprogramminga.github.io/Losbeat.github.io/Views/Losbeats.html
+Link menuju Website Losbeat : https://losbeat.herokuapp.com
 
 <p align="center">
   <img width="220px" height="220px" src="https://github.com/Kelompok12-WebprogrammingA/Losbeat.github.io/blob/master/Images/tenor%20(1).gif">
