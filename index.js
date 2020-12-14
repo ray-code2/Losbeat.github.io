@@ -84,6 +84,6 @@ app.post('/create/homepage', (req, res) => {
        console.log(err)
    })
 app.get('/terms', (req, res) => {
-   res.sendFile('./Views/Losbeat-terms-conditions.pdf', {root:__dirname})
+   res.sendFile('./Views/Losbeat-terms-conditions.pdf' , {root:__dirname})
 })
 });
