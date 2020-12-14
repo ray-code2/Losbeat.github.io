@@ -34,7 +34,7 @@ app.post('/login' , (req , res) => {
    const logins = new login(req.body);
    logins.save()
    .then((result) => {
-        res.redirect('/login');
+        res.redirect('/homepage');
    })
    .catch((err) => {
        console.log(err)
