@@ -13,7 +13,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({extended:true}));
 //
 // Losbeat Landing Page
-app.get('/' , (req , res) =>{
+app.get('/losbeat' , (req , res) =>{
    res.sendFile('./Views/Losbeats.html' , {root: __dirname});
 })
 // Losbeat Create Account Page
