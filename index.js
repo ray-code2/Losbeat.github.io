@@ -2,9 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const user = require('./models/user');
 const app = express();
+const port = process.env.PORT || 3000;
 const mydb = 'mongodb+srv://evorius:123@clusterv-1.bdlq1.mongodb.net/users?retryWrites=true&w=majority';
 mongoose.connect(mydb , {useNewUrlParser:true , useUnifiedTopology:true})
-.then(result => {app.listen(3000, () => {
+.then(result => {app.listen(port, () => {
    console.log(`Server started on port 3000`);
 });})
 .catch(err => console.log(err))
