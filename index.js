@@ -40,7 +40,7 @@ app.post('/login' , (req , res) => {
        console.log(err)
    })
 })
-// Losbeat Family PAge
+// Losbeat Family Page
 app.get('/family' , (req , res) => {
    res.sendFile('./Views/Family.html' , {root: __dirname})
 })
