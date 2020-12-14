@@ -74,6 +74,10 @@ app.get('/duo' , (req , res) => {
 app.get('/premium' , (req , res) => {
    res.sendFile('./Views/purchase.html' , {root:__dirname})
 })
+   // Losbeat Terms And Conditions
+app.get('/terms' , (req , res) => {
+   res.sendFile('./Views/Losbeat-terms-conditions.pdf' , {root:__dirname})
+})
 app.post('/create/homepage', (req, res) => {
    const users = new user(req.body);
    users.save()
@@ -83,8 +87,4 @@ app.post('/create/homepage', (req, res) => {
    .catch((err) => {
        console.log(err)
    })
-   // Losbeat Terms And Conditions
-app.get('/terms' , (req , res) => {
-   res.sendFile('./Views/Losbeat-terms-conditions.pdf' , {root:__dirname})
-})
 });
